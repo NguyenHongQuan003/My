@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0/css/all.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/datajson.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <script>
+        function setMasp(masp) {
+            localStorage.setItem("masp", masp)
+        }
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("nav").slideToggle();
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 4000);
+    </script>
+    <title>63Car</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="col">
+                <div class="logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <label for="">63Car</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="btn-tim">
+                    <input placeholder="Search..." type="text">
+                    <button><i class='fas fa-search'></i></button>
+                </div>
+            </div>
+            <div class="col">
+                <a href="../html/login_register.html"><button><i class="fas fa-user-friends"></i>Đăng nhập</button></a>
+            </div>
+        </div>
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="../html/index.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="">DANH MỤC SẢN PHẨM</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#toyota">TOYOTA</a>
+                            </li>
+                            <li>
+                                <a href="#honda">HONDA</a>
+                            </li>
+                            <li>
+                                <a href="#mazda">MAZDA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">PHỤ TÙNG</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#mamxe">MÂM XE</a>
+                            </li>
+                            <li>
+                                <a href="#denxe">BÓNG ĐÈN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/tinTuc.html">TIN TỨC</a>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="wrapper-slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio buttons start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="../img/slideshow/banner-mazda-8-2296796j31892.webp" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/honda/Honda-City-the-he-5.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/mazda/11daded2-b3dd-44f0-b1e7-281f820ccb06.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/toyota/homepage-banner-desktop-1600x680px.jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="toyota" id="toyota">
+                <div class="headline">
+                    <h3>TOYOTA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="product-thumb">
+                                        <img src="../img/toyota/p1-1.jpeg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="product-name">Vios
+                                        1.5GR-S (thể thao)</a>
+                                    <div class="product-price">641.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="product-thumb">
+                                        <img src="../img/toyota/p2-1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)"
+                                        class="product-name">Camry 2.5HV Hybrid 2023</a>
+                                    <div class="product-price">1.460.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-thumb">
+                                        <img src="../img/toyota/p3-1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)"
+                                        class="product-name">Avanza MT</a>
+                                    <div class="product-price">558.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="product-thumb">
+                                        <img src="../img/toyota/p4-1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)"
+                                        class="product-name">Veloz CrossT</a>
+                                    <div class="product-price">658.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="product-thumb">
+                                        <img src="../img/toyota/p5-1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)"
+                                        class="product-name">Raize</a>
+                                    <div class="product-price">552.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="product-thumb">
+                                        <img src="../img/toyota/p6-1.jpeg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)"
+                                        class="product-name">Corolla Cross 1.8G</a>
+                                    <div class="product-price">755.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="honda" id="honda">
+                <div class="headline">
+                    <h3>HONDA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="product-thumb">
+                                        <img src="../img/honda/p1-2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)"
+                                        class="product-name">Honda City 1.5 RS</a>
+                                    <div class="product-price">599.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-thumb">
+                                        <img src="../img/honda/p2-2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)"
+                                        class="product-name">Honda HR-V 1.8L</a>
+                                    <div class="product-price">871.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="product-thumb">
+                                        <img src="../img/honda/p3-2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)"
+                                        class="product-name">Honda Civic 1.5G</a>
+                                    <div class="product-price">770.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(10)" class="product-thumb">
+                                        <img src="../img/honda/p4-2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(10)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(10)"
+                                        class="product-name">Honda CRV 1.5 L</a>
+                                    <div class="product-price">1.118.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(11)" class="product-thumb">
+                                        <img src="../img/honda/p5-2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(11)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(11)"
+                                        class="product-name">Honda Accord</a>
+                                    <div class="product-price">1.319.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mazda" id="mazda">
+                <div class="headline">
+                    <h3>MAZDA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(12)" class="product-thumb">
+                                        <img src="../img/mazda/p1-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(12)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(12)" class="product-name">
+                                        Mazda 6 Luxury</a>
+                                    <div class="product-price">829.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(13)" class="product-thumb">
+                                        <img src="../img/mazda/p2-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(13)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(13)" class="product-name">
+                                        Mazda 6 2.0L Premium</a>
+                                    <div class="product-price">889.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(14)" class="product-thumb">
+                                        <img src="../img/mazda/p3-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(14)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(14)" class="product-name">
+                                        Mazda 6 2.5L Signature Premium</a>
+                                    <div class="product-price">939.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(15)" class="product-thumb">
+                                        <img src="../img/mazda/p4-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(15)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(15)" class="product-name">
+                                    Mazda BT-50 1.9 MT 4x2</a>
+                                    <div class="product-price">649.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(16)" class="product-thumb">
+                                        <img src="../img/mazda/p5-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(16)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(16)"
+                                        class="product-name">Mazda CX-3 Deluxe</a>
+                                    <div class="product-price">649.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(17)" class="product-thumb">
+                                        <img src="../img/mazda/p6-3.webp" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(17)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(17)" class="product-name">
+                                        Mazda CX-5 Luxury</a>
+                                    <div class="product-price">879.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--------Phụ tùng ------->
+            <div class="phutung-mamxe" id="mamxe">
+                <div class="headline">
+                    <h3>MÂM XE</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(18)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(18)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(18)" class="product-name">Mâm
+                                        đúc chính hãng KIA | L520KF12A77</a>
+                                    <div class="product-price">2.300.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(19)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(19)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(19)" class="product-name">Mâm
+                                        đúc chính hãng KIA | 529101D201T157</a>
+                                    <div class="product-price">2.357.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(20)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm3.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(20)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(20)" class="product-name">Mâm
+                                        đúc chính hãng KIA 15 inch | L520KTA0100</a>
+                                    <div class="product-price">1.950.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(21)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm4.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(21)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(21)" class="product-name">Mâm
+                                        đúc chính hãng KIA | 5291007101I389</a>
+                                    <div class="product-price">1.850.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(22)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm5.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(22)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(22)"
+                                        class="product-name">Logo mâm đúc chính hãng KIA | 0K2N337190</a>
+                                    <div class="product-price">250.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(23)" class="product-thumb">
+                                        <img src="../img/mamxe/ptm6.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(23)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(23)" class="product-name">Mâm
+                                        đúc chính hãng KIA | L520KK2T390</a>
+                                    <div class="product-price">1.713.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phutung-denxe" id="denxe">
+                <div class="headline">
+                    <h3>BÓNG ĐÈN</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(24)" class="product-thumb">
+                                        <img src="../img/bongden/bd1.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(24)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(24)"
+                                        class="product-name">Bóng đèn cản trước H8 chính hãng KIA |
+                                        1864935009L</a>
+                                    <div class="product-price">300.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(25)" class="product-thumb">
+                                        <img src="../img/bongden/bd2.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(25)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(25)"
+                                        class="product-name">Bóng đèn trần xe chính hãng KIA | 92879A4000</a>
+                                    <div class="product-price">850.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(26)" class="product-thumb">
+                                        <img src="../img/bongden/bd3.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(26)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(26)"
+                                        class="product-name">Bóng đèn trần dài chính hãng KIA | 1864510009N</a>
+                                    <div class="product-price">35.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(27)" class="product-thumb">
+                                        <img src="../img/bongden/bd4.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(27)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(27)"
+                                        class="product-name">Bóng đèn chân ghim loại trung chính hãng KIA |
+                                        1864316004N</a>
+                                    <div class="product-price">35.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(28)" class="product-thumb">
+                                        <img src="../img/bongden/bd5.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(28)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(28)"
+                                        class="product-name">Bóng đèn pha H1 chính hãng HYUNDAI KIA |
+                                        1864755009</a>
+                                    <div class="product-price">120.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(29)" class="product-thumb">
+                                        <img src="../img/bongden/bd6.jpg" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(29)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(29)"
+                                        class="product-name">Bóng đèn chân ghim 3w chính hãng HYUNDAI KIA |
+                                        1864305009N</a>
+                                    <div class="product-price">20.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="table">
+                <div class="col">
+                    <h3><i class="fa fa-car"></i> 63Car</h3>
+                    <div class="row">
+                        <P>Chúng tôi cung cấp những chiếc xe tốt nhất của thương hiệu nổi tiếng thế giới</P>
+                        <p><img src="../img/logo/logo.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Thông tin & Liên hệ</h3>
+                    <div class="row">
+                        <p><i class="fa fa-location-dot"></i> 1053 Lê Đức Thọ Gò Vấp tp.HCM</p>
+                        <P><i class="fas fa-phone"></i> +84 56788999</P>
+                        <p><i class="fa fa-envelope"></i> 63car@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Chính sách</h3>
+                    <div class="row">
+                        <P><i class="fa fa-screwdriver-wrench"></i> Bảo hành</P>
+                        <p><i class="fa-solid fa-store"></i> Cửa hàng</p>
+                        <p>Tư vấn</p>
+                        <p>Dịch vụ</p>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3>Theo dõi</h3>
+                    <div class="row">
+                        <p><a href=""><i class="fa-brands fa-facebook-f"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-youtube"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bot">
+            <P>©2023 Bản quyền thuộc về 63Car</P>
+        </div>
+    </div>
+    </div>
+ 
+</body>
+
+</html>

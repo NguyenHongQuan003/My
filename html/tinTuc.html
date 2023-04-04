@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0/css/all.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Chi tiết</title>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("nav").slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="col">
+                <div class="logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <label for="">63Car</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="btn-tim">
+                    <input placeholder="Search..." type="text">
+                    <button><i class='fas fa-search'></i></button>
+                </div>
+            </div>
+            <div class="col">
+                <a href="../html/login_register.html"><button><i class="fas fa-user-friends"></i>Đăng nhập</button></a>
+            </div>
+        </div>
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="../html/index.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="">DANH MỤC SẢN PHẨM</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../html/index.html#toyota">TOYOTA</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#honda">HONDA</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#mazda">MAZDA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">PHỤ TÙNG</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../html/index.html#mamxe">MÂM XE</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#denxe">BÓNG ĐÈN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/tinTuc.html">TIN TỨC</a>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="container-tin-tuc">
+                <h1 style="color: black; font-size: 22px; font-style: italic;">Tin tức ô tô</h1>
+                <div class="main-tin-tuc">
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/civic-tro-lai.jpg" alt="">
+                        <div class="date">02/02/2023</div>
+                        <h3>
+                            Trở lại “đường đua” 2023 đầy hứng khởi cùng Honda Civic Type R
+                        </h3>
+                        <a href="https://www.honda.com.vn/tin-tuc/o-to/tro-lai-duong-dua-2023-day-hung-khoi-cung-honda-civic-type-r">Xem thêm</a>
+                    </div>
+                    <div class="main-tin-tuc-right">
+                        <div class="sub-tin-tuc">
+                            <img src="../img/tin-tuc/bao-duong-sieu-toc.jpg" alt="">
+                            <div class="date">27/02/2023</div>
+                            <h3>
+                                Bảo dưỡng siêu tốc (Chỉ với 30 phút từ Tiếp nhận đến Giao xe)
+                            </h3>
+                            <a href="https://www.honda.com.vn/tin-tuc/o-to/bao-duong-sieu-toc-chi-voi-30-phut-tu-tiep-nhan-den-giao-xe">Xem thêm</a>
+                        </div>
+                        <div class="sub-tin-tuc">
+                            <img src="../img/tin-tuc/honda-vn-congbo-kq.jpg" alt="">
+                            <div class="date">21/02/2023</div>
+                            <h3>
+                                Honda Việt Nam công bố kết quả Hội thi Tư vấn sản phẩm xuất sắc năm 2022    
+                            </h3>
+                            <a href="https://www.honda.com.vn/tin-tuc/o-to/honda-viet-nam-cong-bo-ket-qua-hoi-thi-tu-van-san-pham-xuat-sac-nam-2022">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-tin-tuc">
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/hilux-huyenthoai.png" alt="">
+                            <div class="date">21/03/2023</div>
+                            <h3>
+                                Hilux – “Huyền thoại bán tải, chinh phục đỉnh cao” của Toyota Việt Nam chính thức trở lại từ tháng 3/2023
+                            </h3>
+                            <a href="https://www.toyota.com.vn/tin-tuc/san-pham/hilux-huyen-thoai-ban-tai-chinh-phuc-dinh-cao-cua-toyota-viet-nam-chinh-thuc-tro-lai-tu-thang-3-2023-35452">Xem thêm</a>
+                    </div>
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/toyota-chuyenminh.jpg" alt="">
+                            <div class="date">28/10/2022</div>
+                            <h3>
+                                Toyota chuyển mình đầy mới mẻ tại Triển lãm Ô tô Việt Nam 2022
+                            </h3>
+                            <a href="https://www.toyota.com.vn/tin-tuc/san-pham/toyota-chuyen-minh-day-moi-me-tai-trien-lam-o-to-viet-nam-2022-34505">Xem thêm</a>
+                    </div>
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/bac-thay-cham-xe.jpg" alt="">
+                            <div class="date">16/03/2023 </div>
+                            <h3>
+                                “Bậc thầy chăm xe Toyota Vios” – Sân chơi mới lạ dành cho giới mê xe
+                            </h3>
+                            <a href="https://www.toyota.com.vn/tin-tuc/san-pham/bac-thay-cham-xe-toyota-vios-san-choi-moi-la-danh-cho-gioi-me-xe-35297">Xem thêm</a>
+                    </div>
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/chim-nguong-mazda.webp" alt="">
+                            <div class="date">12/04/2022</div>
+                            <h3>
+                                CHIÊM NGƯỠNG MAZDA 6 2023 PHIÊN BẢN KỶ NIỆM 20 NĂM RA MẮT
+                            </h3>
+                            <a href="http://mazdamiennam.vn/chiem-nguong-mazda-6-2023-phien-ban-ky-niem-20-nam-ra-mat-89763u.html">Xem thêm</a>
+                    </div>
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/mua-mazda-huonguudai.jpg" alt="">
+                            <div class="date">12/04/2022</div>
+                            <h3>
+                                Khách mua Mazda hưởng ưu đãi 100% phí trước bạ
+                            </h3>
+                            <a href="http://mazdamiennam.vn/khach-mua-mazda-huong-uu-dai-100-phi-truoc-ba-89762u.html">Xem thêm</a>
+                    </div>
+                    <div class="sub-tin-tuc">
+                        <img src="../img/tin-tuc/mazdacx-5.webp" alt="">
+                            <div class="date">12/04/2022</div>
+                            <h3>
+                                Mazda CX-5 - Vị thế khó lay chuyển trong lòng người dùng
+                            </h3>
+                            <a href="http://mazdamiennam.vn/mazda-cx-5-vi-the-kho-lay-chuyen-trong-long-nguoi-dung-89764u.html">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="table">
+                <div class="col">
+                    <h3><i class="fa fa-car"></i> 63Car</h3>
+                    <div class="row">
+                        <P>Chúng tôi cung cấp những chiếc xe tốt nhất của thương hiệu nổi tiếng thế giới</P>
+                        <p><img src="../img/logo/logo.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Thông tin & Liên hệ</h3>
+                    <div class="row">
+                        <p><i class="fa fa-location-dot"></i> 1053 Lê Đức Thọ Gò Vấp tp.HCM</p>
+                        <P><i class="fas fa-phone"></i> +84 56788999</P>
+                        <p><i class="fa fa-envelope"></i> 63car@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Chính sách</h3>
+                    <div class="row">
+                        <P><i class="fa fa-screwdriver-wrench"></i> Bảo hành</P>
+                        <p><i class="fa-solid fa-store"></i> Cửa hàng</p>
+                        <p>Tư vấn</p>
+                        <p>Dịch vụ</p>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3>Theo dõi</h3>
+                    <div class="row">
+                        <p><a href=""><i class="fa-brands fa-facebook-f"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-youtube"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bot">
+            <P>©2023 Bản quyền thuộc về 63Car</P>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

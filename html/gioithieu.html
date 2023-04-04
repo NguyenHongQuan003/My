@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0/css/all.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Chi tiết</title>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("nav").slideToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="col">
+                <div class="logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <label for="">63Car</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="btn-tim">
+                    <input placeholder="Search..." type="text">
+                    <button><i class='fas fa-search'></i></button>
+                </div>
+            </div>
+            <div class="col">
+                <a href="../html/login_register.html"><button><i class="fas fa-user-friends"></i>Đăng nhập</button></a>
+            </div>
+        </div>
+        <div id="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="../html/index.html">TRANG CHỦ</a>
+                    </li>
+                    <li>
+                        <a href="">DANH MỤC SẢN PHẨM</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../html/index.html#toyota">TOYOTA</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#honda">HONDA</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#mazda">MAZDA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">PHỤ TÙNG</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../html/index.html#mamxe">MÂM XE</a>
+                            </li>
+                            <li>
+                                <a href="../html/index.html#denxe">BÓNG ĐÈN</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/tinTuc.html">TIN TỨC</a>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieu.html">GIỚI THIỆU</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="introduction">
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>MSSV</th>
+                        <th>Họ & tên</th>
+                        <th>Nhóm</th>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>21032381</td>
+                        <td>Phạm Hữu Phúc</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>21032351</td>
+                        <td>Nguyễn Hồng Quân</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <div class="table">
+                <div class="col">
+                    <h3><i class="fa fa-car"></i> 63Car</h3>
+                    <div class="row">
+                        <P>Chúng tôi cung cấp những chiếc xe tốt nhất của thương hiệu nổi tiếng thế giới</P>
+                        <p><img src="../img/logo/logo.png" alt=""></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Thông tin & Liên hệ</h3>
+                    <div class="row">
+                        <p><i class="fa fa-location-dot"></i> 1053 Lê Đức Thọ Gò Vấp tp.HCM</p>
+                        <P><i class="fas fa-phone"></i> +84 56788999</P>
+                        <p><i class="fa fa-envelope"></i> 63car@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Chính sách</h3>
+                    <div class="row">
+                        <P><i class="fa fa-screwdriver-wrench"></i> Bảo hành</P>
+                        <p><i class="fa-solid fa-store"></i> Cửa hàng</p>
+                        <p>Tư vấn</p>
+                        <p>Dịch vụ</p>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3>Theo dõi</h3>
+                    <div class="row">
+                        <p><a href=""><i class="fa-brands fa-facebook-f"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                        <p><a href=""><i class="fa-brands fa-youtube"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bot">
+            <P>©2023 Bản quyền thuộc về 63Car</P>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
